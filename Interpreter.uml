@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.mibu.interpreter.ConstantExpression</OriginalElement>
+  <nodes>
+    <node x="237.0" y="633.5">com.mibu.interpreter.ComparisonExpression</node>
+    <node x="677.375" y="521.0">com.mibu.interpreter.Expression</node>
+    <node x="66.0" y="90.0">com.mibu.interpreter.Contact</node>
+    <node x="906.25" y="633.5">com.mibu.interpreter.CompoundExpression</node>
+    <node x="0.0" y="633.0">com.mibu.interpreter.ConstantExpression</node>
+    <node x="245.0" y="0.0">java.io.Serializable</node>
+    <node x="408.5" y="791.0">com.mibu.interpreter.EqualsExpression</node>
+    <node x="1138.5" y="791.0">com.mibu.interpreter.OrExpression</node>
+    <node x="1366.25" y="622.0">com.mibu.interpreter.VariableExpression</node>
+    <node x="715.5" y="791.0">com.mibu.interpreter.AndExpression</node>
+    <node x="0.0" y="910.0">com.mibu.interpreter.Context</node>
+    <node x="89.5" y="791.0">com.mibu.interpreter.ContainsExpression</node>
+    <node x="240.0" y="79.0">com.mibu.interpreter.ContactList</node>
+    <node x="0.0" y="291.0">com.mibu.interpreter.ContactImpl</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.mibu.interpreter.AndExpression" target="com.mibu.interpreter.CompoundExpression">
+      <point x="0.0" y="-37.0" />
+      <point x="917.0" y="766.0" />
+      <point x="1016.25" y="766.0" />
+      <point x="-110.0" y="48.0" />
+    </edge>
+    <edge source="com.mibu.interpreter.EqualsExpression" target="com.mibu.interpreter.ComparisonExpression">
+      <point x="0.0" y="-37.0" />
+      <point x="552.0" y="766.0" />
+      <point x="474.75" y="766.0" />
+      <point x="79.25" y="48.0" />
+    </edge>
+    <edge source="com.mibu.interpreter.VariableExpression" target="com.mibu.interpreter.Expression">
+      <point x="0.0" y="-59.5" />
+      <point x="1491.75" y="592.0" />
+      <point x="842.75" y="592.0" />
+      <point x="70.875" y="25.5" />
+    </edge>
+    <edge source="com.mibu.interpreter.CompoundExpression" target="com.mibu.interpreter.Expression">
+      <point x="0.0" y="-48.0" />
+      <point x="1126.25" y="602.0" />
+      <point x="795.5" y="602.0" />
+      <point x="23.625" y="25.5" />
+    </edge>
+    <edge source="com.mibu.interpreter.ContactList" target="java.io.Serializable">
+      <point x="0.0" y="-81.0" />
+      <point x="456.0" y="54.0" />
+      <point x="326.75" y="54.0" />
+      <point x="27.25" y="14.5" />
+    </edge>
+    <edge source="com.mibu.interpreter.ComparisonExpression" target="com.mibu.interpreter.Expression">
+      <point x="0.0" y="-48.0" />
+      <point x="395.5" y="602.0" />
+      <point x="748.25" y="602.0" />
+      <point x="-23.625" y="25.5" />
+    </edge>
+    <edge source="com.mibu.interpreter.OrExpression" target="com.mibu.interpreter.CompoundExpression">
+      <point x="0.0" y="-37.0" />
+      <point x="1335.5" y="766.0" />
+      <point x="1236.25" y="766.0" />
+      <point x="110.0" y="48.0" />
+    </edge>
+    <edge source="com.mibu.interpreter.ContactImpl" target="com.mibu.interpreter.Contact">
+      <point x="0.0" y="-92.5" />
+      <point x="0.0" y="70.0" />
+    </edge>
+    <edge source="com.mibu.interpreter.Contact" target="java.io.Serializable">
+      <point x="0.0" y="-70.0" />
+      <point x="143.0" y="54.0" />
+      <point x="272.25" y="54.0" />
+      <point x="-27.25" y="14.5" />
+    </edge>
+    <edge source="com.mibu.interpreter.ContainsExpression" target="com.mibu.interpreter.ComparisonExpression">
+      <point x="0.0" y="-37.0" />
+      <point x="239.0" y="766.0" />
+      <point x="316.25" y="766.0" />
+      <point x="-79.25" y="48.0" />
+    </edge>
+    <edge source="com.mibu.interpreter.ConstantExpression" target="com.mibu.interpreter.Expression">
+      <point x="0.0" y="-48.5" />
+      <point x="108.5" y="592.0" />
+      <point x="701.0" y="592.0" />
+      <point x="-70.875" y="25.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.9271070615034168" x="404.0" y="209.5" />
+  <SelectedNodes>
+    <node>com.mibu.interpreter.ConstantExpression</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

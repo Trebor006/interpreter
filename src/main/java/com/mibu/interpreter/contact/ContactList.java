@@ -1,4 +1,7 @@
-package com.mibu.interpreter;
+package com.mibu.interpreter.contact;
+
+import com.mibu.interpreter.Context;
+import com.mibu.interpreter.expresion.Expression;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -12,22 +15,17 @@ public class ContactList {
         contacts = new ArrayList();
     }
 
-    public Contact[] getContactAsArray() {
-        return (Contact[]) (contacts.toArray(new Contact[1]));
-    }
-
-    public ArrayList getContactMatchingExpression(Expression expr, Context ctx, Object key) {
-
-        ArrayList results = new ArrayList();
+    public List getContactMatchingExpression(Expression expression, Context context, Object key) {
+        List results = new ArrayList();
 
         Iterator elements = contacts.iterator();
 
         while (elements.hasNext()) {
             Object currentElement = elements.next();
-            ctx.addVariable(key, currentElement);
-            expr.interpret(ctx);
+            context.addVariable(key, currentElement);
+            expression.interpret(context);
 
-            Object interpreterResult = ctx.get(expr);
+            Object interpreterResult = context.get(expression);
 
             if ((interpreterResult != null) && (interpreterResult.equals(Boolean.TRUE))) {
                 results.add(currentElement);

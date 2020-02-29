@@ -1,4 +1,6 @@
-package com.mibu.interpreter;
+package com.mibu.interpreter.expresion.nonterminal;
+
+import com.mibu.interpreter.expresion.Expression;
 
 public abstract class ComparisonExpression implements Expression {
 

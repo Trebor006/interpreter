@@ -1,8 +1,11 @@
-package com.mibu.interpreter;
+package com.mibu.interpreter.expresion.nonterminal;
 
-public class OrExpression extends CompoundExpression {
+import com.mibu.interpreter.Context;
+import com.mibu.interpreter.expresion.Expression;
 
-    public OrExpression(ComparisonExpression expressionA, ComparisonExpression expressionB) {
+public class OrExpression extends ComparisonExpression {
+
+    public OrExpression(Expression expressionA, Expression expressionB) {
         super(expressionA, expressionB);
     }
 

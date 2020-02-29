@@ -1,4 +1,7 @@
-package com.mibu.interpreter;
+package com.mibu.interpreter.expresion.nonterminal;
+
+import com.mibu.interpreter.Context;
+import com.mibu.interpreter.expresion.Expression;
 
 public class ContainsExpression extends ComparisonExpression {
 

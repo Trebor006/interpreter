@@ -1,4 +1,4 @@
-package com.mibu.interpreter;
+package com.mibu.interpreter.contact;
 
 public class Contact {
 

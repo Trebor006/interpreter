@@ -1,6 +1,6 @@
 #Interpreter
 
-#Descipción del Problema.
+#Descripción del Problema.
 Se tiene una libreta de contactos, la cual se necesita que se pueda ser filtrada.
 Los contactos tienen un nombre, apellido, titulo y organización. 
 todos los filtros deben funcionar para cualquiera de todos sus datos.

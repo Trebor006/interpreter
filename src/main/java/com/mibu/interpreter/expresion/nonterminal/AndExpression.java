@@ -1,8 +1,11 @@
-package com.mibu.interpreter;
+package com.mibu.interpreter.expresion.nonterminal;
 
-public class AndExpression extends CompoundExpression {
+import com.mibu.interpreter.Context;
+import com.mibu.interpreter.expresion.Expression;
 
-    public AndExpression(ComparisonExpression expressionA, ComparisonExpression expressionB) {
+public class AndExpression extends ComparisonExpression {
+
+    public AndExpression(Expression expressionA, Expression expressionB) {
         super(expressionA, expressionB);
     }
 

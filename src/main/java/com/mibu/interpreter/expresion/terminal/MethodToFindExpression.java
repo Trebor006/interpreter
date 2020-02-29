@@ -1,15 +1,19 @@
-package com.mibu.interpreter;
+package com.mibu.interpreter.expresion.terminal;
+
+import com.mibu.interpreter.Context;
+import com.mibu.interpreter.contact.Contact;
+import com.mibu.interpreter.expresion.Expression;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Objects;
 
-public class VariableExpression implements Expression {
+public class MethodToFindExpression implements Expression {
 
     private Object lookup;
     private String methodName;
 
-    public VariableExpression(Object newLookup, String newMethodName) {
+    public MethodToFindExpression(Object newLookup, String newMethodName) {
         this.lookup = newLookup;
         this.methodName = newMethodName;
     }
